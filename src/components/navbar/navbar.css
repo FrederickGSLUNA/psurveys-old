@@ -1,0 +1,192 @@
+header{
+  background-color: rgba(255, 255, 255, .5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 87px;
+  padding: 5px 10%;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+
+  width: 100%;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+header .logo{
+  cursor: pointer;
+  display: flex;
+}
+ header .text-logo{
+  display: inline-block;
+  padding: 20px 10px;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 24px;
+  color: #112236;
+  text-decoration: none;
+ }
+
+header .logo img{
+  height: 70px;
+  width: auto;
+}
+
+header .nav-links{
+  list-style: none;
+}
+
+header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header .nav-links li:hover{
+  text-shadow: 0 0 1em rgba(67, 98, 128, 0.5);
+}
+
+
+header .nav-links a{
+  font-weight: 400;
+  color: #112236;
+}
+
+header .nav-links a.active{
+  font-weight: 700;
+}
+
+header .btn{
+  margin: 0px 10px;
+}
+
+header .btn button{
+  width: 156px;
+  padding: 10px 17px;
+  border-radius: 40px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  border: 0;
+  cursor: pointer;
+}
+
+header .btn button:hover{
+  opacity: .95;
+}
+
+header .btn-login button{
+  background-color: #112236;
+  color: #FFF;
+}
+
+header .btn-register button{
+  background-color: #DBE4ED;
+  /*pendiente*/
+  color: #436280;
+}
+
+/*Responsive*/
+
+.menu{
+  display: none;
+}
+
+@media screen and (max-width:1280px){
+  .nav-links, .btn{
+    display: none;
+  }
+
+  .menu{
+    display: inherit;
+  }
+}
+
+header a{
+  text-decoration: none;
+}
+
+header .overlay{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: all 0.3 ease 0s;
+
+}
+
+header .overlay .overlay-content{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header .overlay a{
+  padding: 15px;
+  font-size: 25px;
+  display: block;
+  transition: all 0.3 ease 0s;
+  font-weight: 400;
+  color: #112236;
+}
+
+header .overlay a .active{
+  font-weight: 700;
+}
+
+header .overlay .close{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+@media screen and (max-height:450px){
+  header .overlay a{
+    font-size: 20px;
+  }
+
+  header .overlay .close{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.menu button{
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background-color: transparent;
+  gap: 7px;
+}
+
+.menu button > div {
+  background: #112236;
+  height: 4px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all .5s;
+  transform-origin: left;
+}
+
+.menu button:hover div:first-child {
+  transform: rotate(45deg);
+}
+
+.menu button:hover div:nth-child(2){
+  opacity: 0;
+}
+
+.menu button:hover div:last-child{
+  transform: rotate(-45deg);
+}

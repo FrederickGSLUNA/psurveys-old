@@ -1,0 +1,113 @@
+.bienvenida-two{
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-bottom: 100px;
+  margin-top: 100px;
+
+  background-color: transparent;
+  background-image: url(../../../assets/sombra-inicio.svg);
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: 75% 0%;
+}
+
+.bienvenida-img-two{
+  margin: 0px 25%; /*pendiente -- 25% o auto*/
+}
+
+.bienvenida-titulo-two{
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 117%;
+  max-width: 552px;
+}
+
+.bienvenida-subtitulo-two{
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+  letter-spacing: -0.05em;
+  line-height: 132%;
+  max-width: 445px;
+}
+
+.bienvenida-text-two{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.bienvenida-text-center-two{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+  letter-spacing: -0.05em;
+  line-height: 132%;
+}
+
+/*-----------------*\
+  Medias Querys Two
+\*-----------------*/
+@media (max-width: 1000px){
+  .bienvenida-two{
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    text-align: center;
+    gap: 0;
+    margin-top: 50px;
+
+    background-position: 50% -50%;
+  }
+  .bienvenida-img-two img{
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+  }
+  .bienvenida-text-two{
+    margin: 100px auto 0;
+  }
+  .bienvenida-titulo-two, .bienvenida-subtitulo-two{
+    max-width: none;
+  }
+  .bienvenida-titulo-two{
+    font-size: 55px;
+  }
+  .bienvenida-subtitulo-two, .bienvenida-text-center-two{
+    font-size: 20px;
+    margin: 0 20px;
+  }
+  .bienvenida-text-center-two{
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 700px){
+  .bienvenida-text-two{
+    margin: 70px auto 0;
+  }
+  .bienvenida-titulo-two{
+    font-size: 45px;
+  }
+  .bienvenida-subtitulo-two, .bienvenida-text-center-two{
+    font-size: 18px;
+  }
+  .bienvenida-img-two img{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 625px){
+  .bienvenida-img-two img{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px){
+  .bienvenida-text-two{
+    margin: 50px auto 0;
+  }
+}

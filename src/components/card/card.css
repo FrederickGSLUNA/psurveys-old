@@ -1,0 +1,31 @@
+.card{
+  width: 250px;
+  height: 309px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 5px rgba(163, 186, 210, 0.15);
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+body.dark .card{
+  box-shadow: 0px 0px 10px 1px rgba(204, 204, 204, .15);
+  background-color: #242526;
+}
+
+.card button{
+  font-size: 18px;
+  color: #fff;
+  padding: 9px 35px;
+  text-decoration: none;
+  border-radius: 10px;
+  background: #436280;
+  cursor: pointer;
+  border: none;
+}
+
+.card button:hover{
+  filter: brightness(120%);
+}
