@@ -5,3 +5,8 @@
 .form-container.login{
   min-height: calc(100vh - 237px);
 }
+
+a{
+  text-align: center;
+  align-items: center;
+}

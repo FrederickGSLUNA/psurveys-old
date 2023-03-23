@@ -1,0 +1,89 @@
+.register-title h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 117%;
+    letter-spacing: -0.05em;
+    margin: 40px;
+  }
+  
+  .form-container{
+    margin: 0 auto;
+    max-width: 90%;
+    min-height: calc(100vh - 87px);
+  }
+  
+  .formulario {
+    margin: 32px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.25rem;
+  }
+  
+  .formulario {
+    margin: 32px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.25rem;
+  }
+  
+  .formulario label {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+  
+  }
+  
+  .formulario button,
+  .formulario input,
+  .formulario textarea {
+    background-color: #eee;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    padding: 0.8rem;
+    outline: none;
+  }
+  
+  .formulario input{
+    color: #112236;
+    margin-bottom: -8px;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+    border: 2px solid transparent;
+  }
+  
+  .formulario input::placeholder{
+    color: #BDBFC1;
+  }
+  
+  .formulario input:focus{
+    border: 2px solid #ccc;
+  }
+  
+  .full {
+    grid-column: 1 / 3;
+  }
+  
+  
+  .formulario input.submit{
+    margin-top: 28px;
+    background: #112236;
+    color: #FFFFFF;
+  }
+  
+  .formulario input.submit:hover{
+    filter: brightness(120%);
+    cursor: pointer;
+  }
+  
+  .formulario textarea{
+    font-family: 'Montserrat';
+    font-size: 24px;
+    border: 2px solid transparent;
+  }

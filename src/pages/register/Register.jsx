@@ -158,7 +158,8 @@ const Register = () => {
             <p className="error full">{error}</p>
             <p className="full">
               <input className="submit" type="submit" name="submit" required value="Registrarse"/>
-            </p>
+            </p> <br />
+            <a className="full" href="#">Aviso de Privacidad</a>
           </form>
         </div>
       </section>

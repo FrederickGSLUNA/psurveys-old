@@ -4,6 +4,8 @@ import './App.css'
 //Pages
 import Home from './pages/home/Home';
 import Acerca from './pages/acerca/Acerca';
+import Contacto from './pages/contacto/Contacto';
+import Ayuda from './pages/ayuda/Ayuda';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import _404 from './pages/404/404';
@@ -33,6 +35,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/acerca' element={<Acerca/>}/>
+        <Route path='/contacto' element={<Contacto/>}/>
+        <Route path='/ayuda' element={<Ayuda/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='*' element={<_404/>}/>
