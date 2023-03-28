@@ -1,16 +1,13 @@
 import React, { useState } from "react";
-import './register.css'
+import '../register/register.css'
+import './style.css'
 import { useNavigate } from "react-router-dom";
-//components
-import Navbar from "../../components/navbar/Navbar";
-import Breadcrumbs from "../../components/breadcrumbs/Breadcrumbs";
-import Footer from "../../components/footer/Footer"
 //firebase
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, database } from "../../firebase";
 import { ref, set } from "firebase/database";
 
-const Register = () => {
+const RegistrarAlumno = () => {
 
   //Estado del usuario
   const [userData, setUserData] = useState({
@@ -67,7 +64,6 @@ const Register = () => {
     setError('')
     await createUserWithEmailAndPassword(auth, userData.correo, userData.password)
       .then((userCredential) => {
-        // Signed in 
         const currentUser = userCredential.user
         console.log(currentUser)
         writeUserData(currentUser.uid,
@@ -81,7 +77,6 @@ const Register = () => {
           userData.rol
         )
         alert('¡Registro exitoso!')
-        navigate('/dashboard')
       })
       .catch((error) => {
         setError(error.message)
@@ -92,79 +87,76 @@ const Register = () => {
 
   return(
     <>
-      <Navbar/>
-      <section className="section-padding">
-      <Breadcrumbs/>
+      <section className="section-padding-2">
         <div className="form-container">
           <div className="register-title">
-            <h1>Regístrate</h1>
-            <p>como estudiante</p>
+            <h1>Registrar</h1>
+            <p>a un estudiante</p>
           </div>
           <form className="formulario" onSubmit={handleRegister}>
             <p>
               <label>Nombre</label>
-              <input type="text" name="nombre" required placeholder="Introduce tu nombre" autoComplete="off"
+              <input type="text" name="nombre" required placeholder="Introduce su nombre" autoComplete="off"
                 onChange={handleChange}
               />
             </p>
             <p>
               <label>Apellidos</label>
-              <input type="text" name="apellidos" required placeholder="Introduce tus apellidos" autoComplete="off"
+              <input type="text" name="apellidos" required placeholder="Introduce sus apellidos" autoComplete="off"
                 onChange={handleChange}
               />
             </p>
             <p>
               <label>Correo electrónico</label>
-              <input type="email" name="correo" required placeholder="Introduce tu correo electrónico" autoComplete="off"
+              <input type="email" name="correo" required placeholder="Introduce su correo electrónico" autoComplete="off"
                 onChange={handleChange}
               />
             </p>
             <p>
               <label>Matrícula</label>
-              <input type="number" name="matricula" required placeholder="Introduce tu matrícula" autoComplete="off"
+              <input type="number" name="matricula" required placeholder="Introduce su matrícula" autoComplete="off"
                 onChange={handleChange}
               />
             </p>
             <p className="full">
               <label>Escuela</label>
-              <input type="text" name="escuela" required placeholder="Introduce el nombre de tu escuela" autoComplete="off"
+              <input type="text" name="escuela" required placeholder="Introduce el nombre de su escuela" autoComplete="off"
                 onChange={handleChange}
               />
             </p>
             <p className="full">
               <label>Carrera</label>
-              <input type="text" name="carrera" required placeholder="Introduce el nombre de tu carrera" autoComplete="off"
+              <input type="text" name="carrera" required placeholder="Introduce el nombre de su carrera" autoComplete="off"
                 onChange={handleChange}
               />
             </p>
             <p className="full">
               <label>Género</label>
-              <input type="text" name="genero" required placeholder="Seleccione su género" autoComplete="off"
+              <input type="text" name="genero" required placeholder="Escriba su género" autoComplete="off"
                 onChange={handleChange}
               />
             </p>
             <p>
               <label>Contraseña</label>
-              <input type="password" name="password" required placeholder="Crea una contraseña" autoComplete="off"
+              <input type="password" name="password" required placeholder="Cree una contraseña" autoComplete="off"
                 onChange={handleChange}
               />
             </p>
             <p>
               <label>Confirmar contraseña</label>
-              <input type="password" name="passwordrepeat" required placeholder="Vuelve a escribir tu contraseña" autoComplete="off"
+              <input type="password" name="passwordrepeat" required placeholder="Vuelve a escribir su contraseña" autoComplete="off"
                 onChange={handleChange}
               />
             </p>
             <p className="error full">{error}</p>
             <p className="full">
-              <input className="submit" type="submit" name="submit" required value="Registrarse"/>
+              <input className="submit" type="submit" name="submit" required value="Registrar"/>
             </p>
           </form>
         </div>
       </section>
-      <Footer/>
     </>
   )
 }
 
-export default Register
+export default RegistrarAlumno

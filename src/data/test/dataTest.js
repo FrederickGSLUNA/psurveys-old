@@ -2,16 +2,18 @@ export const dataTest = {
   1:{
     name: 'Cuestionario Honey – Alonso de Estilos de Aprendizaje',
     numberOfQuestions: 80,
-    time: '1hr'
+    time: '1hr',
+    ruta: '/psurveyHoneyAlonso'
   },
   2:{
-    name: 'Canal de Aprendizaje (Visual, Auditivo, Kinestésico)',
-    numberOfQuestions: 27,
-    time: '30min'
+    name: 'Test Aprendizaje PNL',
+    numberOfQuestions: 40,
+    time: '35min',
+    ruta: '/psurveyAprendizajePNL'
   },
   3:{
-    name: 'Otro test cualquiera (prueba)',
-    numberOfQuestions: 30,
-    time: '35min'
+    name: 'Test Aprendizaje Preferencia',
+    numberOfQuestions: 36,
+    time: '30min'
   }
 }

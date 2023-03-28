@@ -13,12 +13,6 @@ export default function Encuesta( props ) {
 
     return (
       <div className='container-quetions'>
-        <div className='instrucciones'>
-          <h3>INSTRUCCIONES:</h3>
-          <p>No hay respuestas correctas o erróneas. Será útil en la medida que seas sincero/a en tus respuestas.</p>
-          <p>Si estás más de acuerdo que en desacuerdo con la sentencia pon un signo más (+),</p>
-          <p>Si, por el contrario, estás más en desacuerdo que de acuerdo, pon un signo menos (-).</p>
-        </div>
         {preguntas.map((pregunta, index) => (
           <div className='pregunta' key={pregunta.number}>
             <h2>{pregunta.number + '.- ' + pregunta.pregunta}</h2>
@@ -26,6 +20,22 @@ export default function Encuesta( props ) {
             <label htmlFor={index}>{pregunta.respuestas.r1}</label>
             <input className='option-input radio' type="radio" name={index}/>
             <label htmlFor={index}>{pregunta.respuestas.r2}</label>
+            {
+              pregunta.respuestas.r3 ? 
+              <>
+                <input className='option-input radio' type="radio" name={index}/>
+                <label htmlFor={index}>{pregunta.respuestas.r3}</label>
+              </> :
+              ''
+            }
+            {
+              pregunta.respuestas.r4 ? 
+              <>
+                <input className='option-input radio' type="radio" name={index}/>
+                <label htmlFor={index}>{pregunta.respuestas.r4}</label>
+              </> :
+              ''
+            }
           </div>
         ))}
       </div>

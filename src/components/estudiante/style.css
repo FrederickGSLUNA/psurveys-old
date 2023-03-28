@@ -1,0 +1,46 @@
+.section-estudiante{
+  text-align: center;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+
+.section-estudiante .imagen-inicio{
+  width: 568px;
+}
+
+.section-estudiante .imagen-inicio img{
+  max-width: 100%;
+}
+
+.section-estudiante h1{
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+}
+
+/*-----------*/
+
+.section-estudiante-encuestas{
+  padding-top: 60px;
+}
+
+.section-estudiante-encuestas h1{
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 117%;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.05em;
+}
+
+.container-cards{
+  margin-top: 35px;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  justify-items: center;
+  justify-content: center;
+}
