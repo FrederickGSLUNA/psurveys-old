@@ -4,6 +4,7 @@ import './card.css'
 import svgCard from '../../assets/svg-card.svg'
 //icons
 import { BiPencil } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
   return(
@@ -11,7 +12,7 @@ const Card = (props) => {
       <img src={svgCard}/>
       <p>{props.title}</p>
       <br/>
-      <button><BiPencil/>Responder</button>
+      <button className="boton-card"><Link to={props.ruta}><BiPencil/>Responder</Link></button>
     </div>
   )
 }

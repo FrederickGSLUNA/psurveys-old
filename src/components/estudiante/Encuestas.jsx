@@ -14,7 +14,7 @@ const EncuestasEstudiante = () => {
       <div className="container-cards">
         {
           dataTestArray.map((test, index) => (
-            <Card key={index} title={test.name}/>
+            <Card key={index} title={test.name} ruta={test.ruta}/>
           ))
         }
       </div>

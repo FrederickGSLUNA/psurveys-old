@@ -29,3 +29,8 @@ body.dark .card{
 .card button:hover{
   filter: brightness(120%);
 }
+
+.card .boton-card a{
+  color: white;
+  text-decoration: none;
+}

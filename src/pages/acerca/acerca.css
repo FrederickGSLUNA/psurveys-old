@@ -1,4 +1,25 @@
 .section-acerca{
+  padding: 0 100px;
   padding-top: 87px;
   min-height: 100vh; /*temp*/
+  text-align: center;
+}
+
+.section-acerca h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+.section-acerca h4, .section-acerca p{
+  font-size: 25px;
+  text-align: left;
+}
+
+.section-acerca img{
+  width: 400px;
+  display: inline-block;
+}
+
+.left{
+  text-align: left;
 }
