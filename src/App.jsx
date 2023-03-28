@@ -30,6 +30,7 @@ import RegistrarPsicologo from './pages/registrarPsicologo/RegistrarPsicologo'
 import PsurveyHoneyAlonso from './components/psurvey/PsurveyHoneyAlonso';
 import PsurveyTestAprendizajePNL from './components/psurvey/PsurveyTestAprendizajePNL';
 import PsurveyAprendizajePreferencia from './components/psurvey/PsurveyAprendizajePreferencia';
+import Resultados from './pages/resultados/Resultados';
 
 function App() {
 
@@ -97,6 +98,8 @@ function App() {
           <Route path='encuestas' element={<EncuestasEstudiante/>}></Route>
           <Route path='RegAlumno' element={<RegistrarAlumno/>}></Route>
           <Route path='RegPsicologo' element={<RegistrarPsicologo/>}></Route>
+
+          <Route path='VerResultados' element={<Resultados/>}></Route>
 
           <Route path='psurveyHoneyAlonso' element={<PsurveyHoneyAlonso/>}></Route> {/*Encuesta Honey Alonso*/}
           <Route path='psurveyAprendizajePNL' element={<PsurveyTestAprendizajePNL/>}></Route> {/*Encuesta Aprendizaje PNL*/}
