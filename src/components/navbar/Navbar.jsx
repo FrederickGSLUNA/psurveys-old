@@ -32,8 +32,8 @@ const Navbar = () => {
         </ul>
       </nav>
       <div>
-        <Link to="/login" className="btn btn-login"><button title="Iniciar sesión">Iniciar Sesión</button></Link>
-        <Link to="/register" className="btn btn-register"><button title="Registrarse">Registrarse</button></Link>
+        <a href="https://practicasuting.alwaysdata.net" className="btn btn-login"><button title="Iniciar sesión">Iniciar Sesión</button></a>
+        <a href="https://practicasuting.alwaysdata.net/register.php" className="btn btn-register"><button title="Registrarse">Registrarse</button></a>
       </div>
 
       {/*responsive*/}
@@ -51,8 +51,8 @@ const Navbar = () => {
           <NavLink to="/ayuda">Ayuda</NavLink>
           <NavLink to="/contacto">Contacto</NavLink>
 
-          <Link to="https://practicasuting.alwaysdata.net" className="btn btn-login"><button title="Iniciar sesión">Iniciar Sesión</button></Link>
-          <Link to="https://practicasuting.alwaysdata.net/register.php" className="btn btn-register"><button title="Registrarse">Registrarse</button></Link>
+          <a href="https://practicasuting.alwaysdata.net" className="btn btn-login"><button title="Iniciar sesión">Iniciar Sesión</button></a>
+          <a href="https://practicasuting.alwaysdata.net/register.php" className="btn btn-register"><button title="Registrarse">Registrarse</button></a>
         </div>
       </div>
     </header>
