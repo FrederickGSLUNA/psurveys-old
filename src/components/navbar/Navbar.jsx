@@ -51,8 +51,8 @@ const Navbar = () => {
           <NavLink to="/ayuda">Ayuda</NavLink>
           <NavLink to="/contacto">Contacto</NavLink>
 
-          <Link to="/login" className="btn btn-login"><button title="Iniciar sesión">Iniciar Sesión</button></Link>
-          <Link to="/register" className="btn btn-register"><button title="Registrarse">Registrarse</button></Link>
+          <Link to="https://practicasuting.alwaysdata.net" className="btn btn-login"><button title="Iniciar sesión">Iniciar Sesión</button></Link>
+          <Link to="https://practicasuting.alwaysdata.net/register.php" className="btn btn-register"><button title="Registrarse">Registrarse</button></Link>
         </div>
       </div>
     </header>
