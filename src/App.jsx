@@ -9,6 +9,14 @@ import Contacto from './pages/contacto/Contacto';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import _404 from './pages/404/404';
+import Mision from './pages/mision/Mision';
+import Vision from './pages/vision/Vision';
+import QuienesSomos from './pages/quienesomos/QuienesSomos';
+import Valores from './pages/valores/Valores';
+import Servicios from './pages/servicios/Servicios';
+import AvisoPrivacidad from './pages/aviso/Aviso';
+import PoliticaPrivacidad from './pages/politica/Politica';
+import Portafolio from './pages/portafolio/Portafolio';
 //Estudiante
 import SidebarEstudiante from './components/sidebar/SidebarEstudiante';
 import InicioEstudiante from './components/estudiante/Inicio';
@@ -90,6 +98,14 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='*' element={<_404/>}/>
+        <Route path='/mision' element={<Mision/>}/>
+        <Route path='/vision' element={<Vision/>}/>
+        <Route path='/somos' element={<QuienesSomos/>}/>
+        <Route path='/valores' element={<Valores/>}/>
+        <Route path='/servicios' element={<Servicios/>}/>
+        <Route path='/aviso' element={<AvisoPrivacidad/>}/>
+        <Route path='/politica' element={<PoliticaPrivacidad/>}/>
+        <Route path='/portafolio' element={<Portafolio/>}/>
 
         {/*Rutas Dashboard*/}
         <Route path='/dashboard' element={<SwitchSidebar name={user ? user.email : ''}/>}>

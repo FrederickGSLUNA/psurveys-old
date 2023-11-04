@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 //css
 import './footer.css'
 
@@ -61,10 +62,10 @@ const Footer = () => {
           <h2 className="nav__title">Legal</h2>
           <ul className="nav__ul">
             <li>
-              <a href="#">Politica de Privacidad</a>
+              <NavLink to={"/politica"}>Politica de Privacidad</NavLink>
             </li>
             <li>
-              <a href="#">Terminos de uso</a>
+              <NavLink to={"/aviso"}>Aviso de Privacidad</NavLink>
             </li>
             <li>
               <a href="#">Sitemap</a>
@@ -77,7 +78,7 @@ const Footer = () => {
         <p>&copy; 2023 Psurveys. All rights reserved.</p>
         
         <div className="legal__links">
-          <span>Desarrollado por: </span>
+          <span>Desarrollado por:  @ Team Psurveys</span>
         </div>
       </div>
     </footer>

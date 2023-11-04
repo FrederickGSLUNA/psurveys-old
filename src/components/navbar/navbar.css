@@ -190,3 +190,48 @@ header .overlay .close{
 .menu button:hover div:last-child{
   transform: rotate(-45deg);
 }
+
+/* Estilos para mostrar el submenú en dispositivos móviles */
+.submenu {
+  display: none; /* Por defecto, el submenú estará oculto */
+  list-style: none; /* Elimina los puntos de lista */
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
+
+.submenu li {
+  /* Estilos para los elementos de la lista del submenú */
+  margin: 5px 0;
+}
+
+/* Estilos para mostrar el submenú cuando se pasa el ratón por encima */
+.nav-links li:hover > .submenu {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9; /* Color de fondo del submenú */
+  padding: 5px;
+  border: 1px solid #ccc; /* Borde del submenú */
+}
+
+/* Estilos para posicionar cada submenú debajo del anterior */
+.nav-links li {
+  position: relative; /* Hace que la posición sea relativa */
+}
+
+.nav-links .submenu {
+  position: absolute;
+  top: 100%; /* Aparece debajo del elemento padre */
+  left: 0;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .submenu {
+    display: none; /* Ocultar el submenú en pantallas más pequeñas (móviles) por defecto */
+  }
+
+  .nav-links li:hover .submenu {
+    display: block; /* Mostrar el submenú al hacer hover en dispositivos móviles */
+  }
+}

@@ -26,7 +26,17 @@ const Navbar = () => {
       <nav>
         <ul className="nav-links">
           <li><NavLink to="/">Inicio</NavLink></li>
-          <li><NavLink to="/acerca">Acerca</NavLink></li>
+          <li>
+            Acerca
+            <ul className="submenu">
+              <li><NavLink to={"/mision"}>Mision</NavLink></li> <hr />
+              <li><NavLink to={"/vision"}>Vision</NavLink></li> <hr />
+              <li><NavLink to={"/somos"}>¿Quiénes Somos?</NavLink></li> <hr />
+              <li><NavLink to={"/valores"}>Valores</NavLink></li> <hr />
+              <li><NavLink to={"/servicios"}>Servicios Ofrecidos</NavLink></li> <hr />
+              <li><NavLink to={"/portafolio"}>Portafolio</NavLink></li>
+            </ul>
+          </li>
           <li><NavLink to="/ayuda">Ayuda</NavLink></li>
           <li><NavLink to="/contacto">Contacto</NavLink></li>
         </ul>
@@ -47,7 +57,17 @@ const Navbar = () => {
         <a onClick={closeNav} href="#" className="close">&times;</a>
         <div className="overlay-content">
           <NavLink to="/">Inicio</NavLink>
-          <NavLink to="/acerca">Acerca</NavLink>
+          <li>
+            Acerca
+            <ul className="submenu">
+              <li><NavLink to={"/mision"}>Mision</NavLink></li>
+              <li><NavLink to={"/vision"}>Vision</NavLink></li>
+              <li><NavLink to={"/somos"}>¿Quiénes Somos?</NavLink></li>
+              <li><NavLink to={"/valores"}>Valores</NavLink></li>
+              <li><NavLink to={"/servicios"}>Servicios Ofrecidos</NavLink></li>
+              <li><NavLink to={"/portafolio"}>Portafolio</NavLink></li>
+            </ul>
+          </li>
           <NavLink to="/ayuda">Ayuda</NavLink>
           <NavLink to="/contacto">Contacto</NavLink>
 

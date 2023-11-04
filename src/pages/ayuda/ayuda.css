@@ -1,0 +1,28 @@
+.section-ayuda{
+	padding-top: 87px;
+  min-height: 100vh; 
+}
+
+.section-ayuda img{
+  width: 500px;
+}
+
+.section-ayuda .titulo{
+  font-size: 40px;
+}
+
+.section-ayuda .principal{
+  padding: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+.section-ayuda .texto{
+  padding: 20px;
+  margin: 20px;
+  font-size: 26px;
+  justify-content: center;
+  text-align: justify;
+  line-height: 120%;
+  letter-spacing: -0.10rem;
+}

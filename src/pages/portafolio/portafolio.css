@@ -1,0 +1,24 @@
+.section-portafolio {
+    padding: 100px 5% 0 5%; /* Ajuste del padding para ser responsivo */
+    min-height: 100vh; /* Altura mínima igual al 100% de la altura de la ventana */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+.section-portafolio h1 {
+    font-size: 36px;
+}
+
+.section-portafolio p {
+    font-size: 20px;
+}
+
+/* Ajuste del tamaño de las imágenes en el carrusel */
+.carousel .slide img {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    width: 650px; /* Establece un ancho específico para las imágenes del carrusel */
+    height: auto; /* Permite que la altura se ajuste automáticamente en proporción al ancho */
+    max-height: 600px; /* Límite de altura máximo para las imágenes */
+}     

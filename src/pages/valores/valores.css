@@ -1,0 +1,34 @@
+.section-valores {
+    padding: 100px 5% 0 5%; /* Ajuste del padding para ser responsivo */
+    min-height: 60vh; /* Altura mínima igual al 100% de la altura de la ventana */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilos para los títulos h2 */
+  .section-valores h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el texto del párrafo */
+  .section-valores li p {
+    font-size: 25px;
+    text-align: justify;
+  }
+
+  /* Media queries para la responsividad */
+  @media only screen and (max-width: 768px) {
+    .section-valores {
+      padding: 60px 5% 0 5%; /* Ajuste del padding para pantallas más pequeñas */
+    }
+  
+    .section-valores h2 {
+      font-size: 28px;
+    }
+  
+    .section-valores p {
+      font-size: 16px;
+    }
+  }

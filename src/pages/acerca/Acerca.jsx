@@ -1,9 +1,9 @@
 import React from "react";
 import './acerca.css'
+
 //componentes
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import Breadcrumbs from "../../components/breadcrumbs/Breadcrumbs";
 
 import acerca1 from '../../assets/acerca1.svg'
 
@@ -13,7 +13,6 @@ const Acerca = () => {
     <div className="Acerca">
       <Navbar/>
       <section className="section-acerca">
-        <Breadcrumbs className='left'/>
         <h1>Acerca de nosotros</h1>
         <br />
         <h4>Bienvenidos a nuestra página de encuestas psicológicas especializada en ayudar a las personas a descubrir su estilo de aprendizaje.</h4>

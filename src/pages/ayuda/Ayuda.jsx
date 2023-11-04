@@ -1,19 +1,17 @@
 import React from "react";
-import './style.css'
+import './ayuda.css'
 //componentes
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import Breadcrumbs from "../../components/breadcrumbs/Breadcrumbs";
 
 import ayuda1 from '../../assets/ayuda1.svg'
 
 const Ayuda = () => {
 
   return (
-    <div className="Acerca">
+    <div>
       <Navbar/>
       <section className="section-ayuda">
-        <Breadcrumbs/>
         <div className="principal">
         	<h1 className="titulo">Ayuda</h1>
         	<p className="texto">
@@ -23,11 +21,6 @@ const Ayuda = () => {
             y la de tus seres queridos.
         	</p>
             <img src={ayuda1} alt="Ayuda" />
-          <p className="texto">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatum vitae
-             exercitationem ab accusantium nihil fugiat enim dicta aperiam incidunt, perferendis
-             nam quisquam ducimus aspernatur sint dolore. Laboriosam, dolores cupiditate?
-          </p>
         </div>
       </section>
       <Footer/>

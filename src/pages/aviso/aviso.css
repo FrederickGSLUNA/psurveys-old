@@ -1,0 +1,66 @@
+/* Estilos para la sección de aviso de privacidad */
+.section-aviso {
+    padding: 100px 5%; /* Ajuste del padding para ser responsivo */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para los títulos h1 y h2 */
+  .section-aviso h1 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .section-aviso h2 {
+    font-size: 32px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para el texto del párrafo */
+  .section-aviso p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  /* Estilos para las imágenes */
+  .section-aviso img {
+    max-width: 30%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Media queries para la responsividad */
+  @media only screen and (max-width: 768px) {
+    .section-aviso {
+      padding: 60px 5%;
+      text-align: center;
+    }
+  
+    .section-aviso h1 {
+      font-size: 28px;
+    }
+  
+    .section-aviso h2 {
+      font-size: 20px;
+    }
+  
+    .section-aviso p {
+      font-size: 16px;
+    }
+
+    .section-aviso img {
+      margin: 0 auto;
+      max-width: 30%;
+    }
+  }
+  
