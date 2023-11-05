@@ -38,7 +38,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li><NavLink to="/ayuda">Ayuda</NavLink></li>
-          <li><a href="https://practicasuting.alwaysdata.net/contacto.php"><NavLink>Contacto</NavLink></a></li>
+          <li><a href="https://practicasuting.alwaysdata.net/contacto.php">Contacto</a></li>
         </ul>
       </nav>
       <div>
