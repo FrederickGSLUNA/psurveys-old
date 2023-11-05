@@ -148,17 +148,17 @@ header .overlay .close{
   font-size: 65px;
 }
 
-@media screen and (max-height:450px){
-  header .overlay a{
-    font-size: 20px;
-  }
+  @media screen and (max-height:450px){
+    header .overlay a{
+      font-size: 20px;
+    }
 
-  header .overlay .close{
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+    header .overlay .close{
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
   }
-}
 
 .menu button{
   display: flex;
@@ -191,47 +191,48 @@ header .overlay .close{
   transform: rotate(-45deg);
 }
 
-/* Estilos para mostrar el submenú en dispositivos móviles */
+/* Estilos para mostrar el submenú en dispositivos más grandes */
 .submenu {
   display: none; /* Por defecto, el submenú estará oculto */
   list-style: none; /* Elimina los puntos de lista */
   margin: auto;
   padding: auto;
   text-align: center;
-}
-
-.submenu li {
-  /* Estilos para los elementos de la lista del submenú */
-  margin: 5px 0;
-}
-
-/* Estilos para mostrar el submenú cuando se pasa el ratón por encima */
-.nav-links li:hover > .submenu {
-  display: block;
-  position: absolute;
+  position: absolute; /* Agregado para una mejor colocación */
   background-color: #f9f9f9; /* Color de fondo del submenú */
-  padding: 5px;
-  border: 1px solid #ccc; /* Borde del submenú */
+  border: 2px solid #ccc; /* Borde del submenú */ 
+  border-radius: 10px; /* Borde redondeado */
 }
 
-/* Estilos para posicionar cada submenú debajo del anterior */
+.submenu li:hover {
+  margin: 3px;
+  background-color: #e5e3e3;
+  padding: auto;
+
+}
+
+/* Estilos para posicionar cada submenú debajo del elemento correspondiente */
 .nav-links li {
   position: relative; /* Hace que la posición sea relativa */
 }
 
 .nav-links .submenu {
-  position: absolute;
   top: 100%; /* Aparece debajo del elemento padre */
   left: 0;
+  display: none; /* Inicialmente, oculta el submenú */
+}
+
+.nav-links li:hover .submenu {
+  display: block; /* Muestra el submenú al pasar el ratón por encima */
 }
 
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
-  .submenu {
-    display: none; /* Ocultar el submenú en pantallas más pequeñas (móviles) por defecto */
+  .nav-links .submenu {
+    display: none; /* Oculta el submenú en pantallas más pequeñas por defecto */
   }
 
   .nav-links li:hover .submenu {
-    display: block; /* Mostrar el submenú al hacer hover en dispositivos móviles */
+    display: block; /* Muestra el submenú al hacer clic en dispositivos móviles */
   }
 }

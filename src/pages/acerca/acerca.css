@@ -1,6 +1,5 @@
-/* Estilos base para la sección Acerca de nosotros */
 .section-acerca {
-  padding: 100px 5% 0 5%;
+  padding: 110px 5% 0 5%;
   text-align: center;
 }
 
@@ -10,7 +9,10 @@
 }
 
 /* Estilos para los títulos h4 y párrafos p */
-.section-acerca h4,
+.section-acerca h4 {
+  font-size: 26px;
+}
+
 .section-acerca p {
   font-size: 25px;
   text-align: justify;
@@ -28,16 +30,25 @@
 /* Media queries para la responsividad */
 @media only screen and (max-width: 768px) {
   .section-acerca {
-    padding: 60px 5% 0 5%;
+    padding: 100px 5% 0 5%;
   }
 
   .section-acerca h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
-  .section-acerca h4,
+  .section-acerca h4 {
+    font-size: 20px;
+    text-align: justify;
+  }
   .section-acerca p {
     font-size: 18px;
+    text-align: justify;
+  } 
+
+  .section-acerca img {
+    margin: 0 auto;
+    max-width: 50%;
   }
 }
 
@@ -46,8 +57,18 @@
     font-size: 28px;
   }
 
-  .section-acerca h4,
+  .section-acerca h4 {
+    font-size: 20px;
+    text-align: justify;
+  }
+
   .section-acerca p {
-    font-size: 16px;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .section-acerca img {
+    margin: 0 auto;
+    max-width: 50%;
   }
 }
