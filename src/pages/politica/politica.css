@@ -1,6 +1,5 @@
-/* Estilos para la sección de aviso de privacidad */
 .section-politica {
-    padding: 100px 5%; /* Ajuste del padding para ser responsivo */
+    padding: 110px 5%; /* Ajuste del padding para ser responsivo */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -42,7 +41,7 @@
   /* Media queries para la responsividad */
   @media only screen and (max-width: 768px) {
     .section-politica {
-      padding: 60px 5%;
+      padding: 110px 5%;
       text-align: center;
     }
   
@@ -56,11 +55,12 @@
   
     .section-politica p {
       font-size: 16px;
+      text-align: justify;
     }
 
     .section-politica img {
       margin: 0 auto;
-      max-width: 30%;
+      max-width: 50%;
     }
   }
   

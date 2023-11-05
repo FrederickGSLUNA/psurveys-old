@@ -68,7 +68,7 @@ const PoliticaPrivacidad = () => {
         <p>
         Si tienes preguntas o inquietudes sobre nuestra Política de Privacidad, contáctanos a través de la información proporcionada en nuestro sitio web.
         </p>
-            <br /> <br />
+            <br /> 
         <p><b>Fecha de última actualización:</b> 03 de Noviembre del 2023</p>
       </section>  
       <Footer/>

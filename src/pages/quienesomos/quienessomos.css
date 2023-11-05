@@ -1,6 +1,6 @@
 /* Estilos para la sección de la visión */
 .section-quienes-somos {
-    padding: 100px 5% 0 5%; /* Ajuste del padding para ser responsivo */
+    padding: 110px 5% 0 5%; /* Ajuste del padding para ser responsivo */
     min-height: 60vh; /* Altura mínima igual al 100% de la altura de la ventana */
     text-align: center;
     display: flex;
@@ -22,7 +22,7 @@
   /* Media queries para la responsividad */
   @media only screen and (max-width: 768px) {
     .section-quienes-somos {
-      padding: 60px 5% 0 5%; /* Ajuste del padding para pantallas más pequeñas */
+      padding: 100px 5% 0 5%; /* Ajuste del padding para pantallas más pequeñas */
     }
   
     .section-quienes-somos h2 {

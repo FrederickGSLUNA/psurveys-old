@@ -65,11 +65,11 @@ const Navbar = () => {
               <li><NavLink to={"/somos"}>¿Quiénes Somos?</NavLink></li>
               <li><NavLink to={"/valores"}>Valores</NavLink></li>
               <li><NavLink to={"/servicios"}>Servicios Ofrecidos</NavLink></li>
-              <li><NavLink to={"https://practicasuting.alwaysdata.net/contacto.php"}>Portafolio</NavLink></li>
+              <li><NavLink to={"/portafolio"}>Portafolio</NavLink></li>
             </ul>
           </li>
           <NavLink to="/ayuda">Ayuda</NavLink>
-          <NavLink to="/contacto">Contacto</NavLink>
+          <NavLink to="https://practicasuting.alwaysdata.net/contacto.php">Contacto</NavLink>
 
           <a href="https://practicasuting.alwaysdata.net" className="btn btn-login"><button title="Iniciar sesión">Iniciar Sesión</button></a>
           <a href="https://practicasuting.alwaysdata.net/register.php" className="btn btn-register"><button title="Registrarse">Registrarse</button></a>

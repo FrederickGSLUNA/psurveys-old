@@ -2,8 +2,15 @@ const cacheName = 'project';
 const cacheAssets = [
   '/',
   'Home.jsx',
+  'Ayuda.jsx',
+  'Mision.jsx',
   'Vision.jsx',
-  'Valores.jsx'
+  'QuienesSomos.jsx',
+  'Valores.jsx',
+  'Servicios.jsx',
+  'Portafolio.jsx',
+  'Aviso.jsx',
+  'Politica.jsx'
 
   // Agrega más recursos según sea necesario
 ];
