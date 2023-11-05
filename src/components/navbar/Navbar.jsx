@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/logo-psurveys.png';
 import './navbar.css';
@@ -9,6 +9,10 @@ const Navbar = () => {
   const toggleSubMenu = () => {
     setShowSubMenu(!showSubMenu);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll hasta arriba al cambiar de ruta
+  }, [location.pathname]);
 
   function openNav() {
     document.getElementById('mobile-menu').style.width = "100%";
