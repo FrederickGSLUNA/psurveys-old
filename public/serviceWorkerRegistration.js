@@ -2,7 +2,7 @@
 export function registerServiceWorker() {
   if ('serviceWorker' in navigator && 'PushManager' in window) {
     // Registramos el service worker
-    navigator.serviceWorker.register('/src/utilities/service-worker.js')
+    navigator.serviceWorker.register('/service-worker.js')
       .then((registration) => {
         console.log('Service worker registrado con exito.', registration);
         // Solicitamos el permiso para la notificación
