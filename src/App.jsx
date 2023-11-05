@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import './App.css'
 //Pages
@@ -39,12 +39,18 @@ import PsurveyHoneyAlonso from './components/psurvey/PsurveyHoneyAlonso';
 import PsurveyTestAprendizajePNL from './components/psurvey/PsurveyTestAprendizajePNL';
 import PsurveyAprendizajePreferencia from './components/psurvey/PsurveyAprendizajePreferencia';
 import Resultados from './pages/resultados/Resultados';
+// Service Worker
+import { registerServiceWorker } from '../public/serviceWorkerRegistration'
 
 function App() {
 
   //Estado del Usuario
   const [user, setUser] = useState(null)
   const [rol, setRol] = useState(null)
+
+  useEffect(() => {
+    registerServiceWorker();
+  }, []);
 
   onAuthStateChanged(auth, (userFirebase)=>{
     if (userFirebase) {
@@ -90,7 +96,7 @@ function App() {
 
   return (
     <div className="App">
-      <Routes>  
+      <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/acerca' element={<Acerca/>}/>
         <Route path='/ayuda' element={<Ayuda/>}/>

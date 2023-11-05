@@ -1,18 +1,7 @@
 const cacheName = 'project';
 const cacheAssets = [
   '/',
-  'Home.jsx',
-  'Ayuda.jsx',
-  'Mision.jsx',
-  'Vision.jsx',
-  'QuienesSomos.jsx',
-  'Valores.jsx',
-  'Servicios.jsx',
-  'Portafolio.jsx',
-  'Aviso.jsx',
-  'Politica.jsx'
-
-  // Agrega más recursos según sea necesario
+  'index.html',
 ];
 
 self.addEventListener('install', (event) => {
@@ -62,24 +51,27 @@ self.addEventListener('push', function(event) {
 });
 
 self.addEventListener('fetch', (event) => {
-  const url = new URL(event.request.url);
-  console.log('Service worker: Fetching');
-
-  event.respondWith(
-    fetch(event.request)
-      .then((networkResponse) => {
-        const responseClone = networkResponse.clone();
-        caches.open(cacheName)
-          .then((cache) => {
-            cache.put(event.request, responseClone);
-          });
-        return networkResponse;
-      })
-      .catch(() => {
-        return caches.match(event.request)
-          .then((cacheResponse) => {
-            return cacheResponse || fetch(event.request);
-          });
-      })
-  );
+  if (event.request.url.startsWith('http')) {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          // Copia la respuesta
+          const responseToCache = response.clone();
+          // Abre el caché
+          caches.open(cacheName)
+            .then((cache) => {
+              cache.put(event.request, responseToCache).catch((error) => {
+                console.warn('Error al cachear:', event.request.url, error);
+              });
+            });
+          return response;
+        })
+        .catch((error) => {
+          console.error('Fetch fallido; devolviendo caché si existe:', error);
+          return caches.match(event.request);
+        })
+    );
+  }
 });
+
+
