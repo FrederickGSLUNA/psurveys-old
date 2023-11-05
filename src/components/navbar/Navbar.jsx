@@ -38,7 +38,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li><NavLink to="/ayuda">Ayuda</NavLink></li>
-          <li><NavLink to="https://practicasuting.alwaysdata.net/contacto.php">Contacto</NavLink></li>
+          <li><a href="https://practicasuting.alwaysdata.net/contacto.php">Contacto</a></li>
         </ul>
       </nav>
       <div>
@@ -69,7 +69,7 @@ const Navbar = () => {
             </ul>
           </li>
           <NavLink to="/ayuda">Ayuda</NavLink>
-          <NavLink to="https://practicasuting.alwaysdata.net/contacto.php">Contacto</NavLink>
+          <a href="https://practicasuting.alwaysdata.net/contacto.php">Contacto</a>
 
           <a href="https://practicasuting.alwaysdata.net" className="btn btn-login"><button title="Iniciar sesión">Iniciar Sesión</button></a>
           <a href="https://practicasuting.alwaysdata.net/register.php" className="btn btn-register"><button title="Registrarse">Registrarse</button></a>
