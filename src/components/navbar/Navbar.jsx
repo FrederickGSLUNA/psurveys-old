@@ -10,6 +10,7 @@ const Navbar = () => {
     setShowSubMenu(!showSubMenu);
   };
 
+  // desplazar la ventana (hacer scroll) hacia la parte superior de la página cada vez que cambia la ruta
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll hasta arriba al cambiar de ruta
   }, [location.pathname]);
@@ -33,11 +34,10 @@ const Navbar = () => {
       <nav>
         <ul className="nav-links">
           <li><NavLink to="/">Inicio</NavLink></li>
-          <NavLink to="/acerca">Acerca</NavLink>
-
           <li onClick={toggleSubMenu}>
-            Empresa
+            Acerca
             <ul className="submenu">
+              <li><NavLink to="/acerca">Empresa</NavLink></li> <hr />
               <li><NavLink to="/mision">Misión</NavLink></li> <hr />
               <li><NavLink to="/vision">Visión</NavLink></li> <hr />
               <li><NavLink to="/somos">¿Quiénes Somos?</NavLink></li> <hr />
@@ -72,11 +72,11 @@ const Navbar = () => {
         <a onClick={closeNav} href="#" className="close">&times;</a>
         <div className="overlay-content">
           <NavLink to="/">Inicio</NavLink>
-          <NavLink to="/acerca">Acerca</NavLink>
           
-          <NavLink to="#" onClick={() => setShowSubMenu(!showSubMenu)}>Empresa</NavLink>
+          <NavLink to="#" onClick={() => setShowSubMenu(!showSubMenu)}>Acerca</NavLink>
             {showSubMenu && (
               <ul className="submenu">
+                <li><NavLink to="/acerca">Empresa</NavLink></li>
                 <li><NavLink to="/mision">Misión</NavLink></li>
                 <li><NavLink to="/vision">Visión</NavLink></li>
                 <li><NavLink to="/somos">¿Quiénes Somos?</NavLink></li>

@@ -1,10 +1,9 @@
 .section-portafolio {
     padding: 110px 5% 0 5%; /* Ajuste del padding para ser responsivo */
-    min-height: 100vh; /* Altura mínima igual al 100% de la altura de la ventana */
+    min-height: 90vh; /* Altura mínima igual al 100% de la altura de la ventana */
     text-align: center;
     display: flex;
     flex-direction: column;
-    
   }
 
 .section-portafolio h1 {
@@ -15,10 +14,39 @@
     font-size: 20px;
 }
 
-/* Ajuste del tamaño de las imágenes en el carrusel */
+/* Establecer un tamaño fijo para las imágenes del carrusel */
 .carousel .slide img {
-    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
-    width: 600px; /* Establece un ancho específico para las imágenes del carrusel */
-    height: auto; /* Permite que la altura se ajuste automáticamente en proporción al ancho */
-    max-height: 600px; /* Límite de altura máximo para las imágenes */
-}     
+    width: 40%; /* Establecer el ancho al 100% del contenedor */
+    height: 300px; /* Establecer la altura fija para las imágenes */
+    border-radius: 8px; /* Agregar bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir sombra a las imágenes */
+}
+ 
+/*Para que el carousel no se encimbe del Navbar -> 1000*/
+.carousel {
+    z-index: 900;
+}
+
+ /* Media queries para la responsividad */
+ @media only screen and (max-width: 768px) {
+    .section-portafolio {
+      padding: 110px 5%;
+    }
+  
+    .section-portafolio h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    .section-portafolio p {
+      font-size: 20px;
+      text-align: justify;
+    }
+
+    .carousel .slide img {
+        width: 80%; /* Establecer el ancho al 100% del contenedor */
+        height: 250px; /* Establecer la altura fija para las imágenes */
+        border-radius: 8px; /* Agregar bordes redondeados */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir sombra a las imágenes */
+      }
+}

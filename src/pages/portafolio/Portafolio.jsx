@@ -6,9 +6,9 @@ import './portafolio.css';
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 
-import portafolio1 from '../../assets/portafolio1.jpg';
-import portafolio2 from '../../assets/portafolio2.png';
-import portafolio3 from '../../assets/portafolio3.jpg';
+import portafolio1 from '../../assets/portafolio1.svg';
+import portafolio2 from '../../assets/portafolio2.svg';
+import portafolio3 from '../../assets/portafolio3.svg';
 
 const Portafolio = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -16,7 +16,7 @@ const Portafolio = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide === 2 ? 0 : prevSlide + 1));
-    }, 3000); // Cambia la imagen cada 2 segundos (2000 ms)
+    }, 3000); // Cambia la imagen cada 3 segundos (3000 ms)
 
     return () => clearInterval(interval);
   }, []);
@@ -27,7 +27,7 @@ const Portafolio = () => {
       <section className='section-portafolio'>
         <h1>Portafolio</h1> <br />
         <p>Descubre nuestros proyectos más recientes y exitosos. Sumérgete en un mundo de creatividad y excelencia.</p> <br />
-        <Carousel showThumbs={true} selectedItem={activeSlide} autoPlay={true} interval={3000} infiniteLoop={true}>
+        <Carousel showThumbs={false} selectedItem={activeSlide} autoPlay={true} interval={3000} infiniteLoop={true}>
           <div>
             <img src={portafolio1} alt="Portafolio 1" />
           </div>
