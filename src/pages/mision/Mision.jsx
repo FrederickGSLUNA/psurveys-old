@@ -31,7 +31,7 @@ const Mision = () => {
                 </p> <br />
 
                 <p>
-                    En PSurveys, estamos comprometidos a impulsar el bienestar emocional, el desarrollo académico y profesional en la comunidad universitaria. Nuestra prioridad es brindar soluciones confiables y éticas que contribuyan al éxito académico y al bienestar de quienes forman parte de esta institución educativa.
+                    En Psurveys, estamos comprometidos a impulsar el bienestar emocional, el desarrollo académico y profesional en la comunidad universitaria. Nuestra prioridad es brindar soluciones confiables y éticas que contribuyan al éxito académico y al bienestar de quienes forman parte de esta institución educativa.
                 </p>
             </section>
             <Footer />
