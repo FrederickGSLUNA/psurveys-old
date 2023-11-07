@@ -227,50 +227,13 @@ header .overlay .close{
   display: block; /* Muestra el submenú al pasar el ratón por encima */
 }
 
-/**/
-
-
-/* Ajustes para dispositivos móviles más pequeños */
-@media screen and (max-width: 480px) {
-  header {
-    padding: 5px; /* Reducción adicional del relleno del encabezado */
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .nav-links .submenu {
+    display: none; /* Oculta el submenú en pantallas más pequeñas por defecto */
   }
 
-  .nav-links {
-    display: flex; /* Mostrar los enlaces del menú en línea */
-    justify-content: space-around; /* Distribuir los enlaces equitativamente */
-    align-items: center; /* Centrar verticalmente */
-    list-style: none; /* Eliminar viñetas de la lista */
-  }
-
-  .nav-links li {
-    display: inline-block; /* Mostrar elementos en línea */
-    padding: 0 7px; /* Ajustar el espacio alrededor de los elementos */
-  }
-
-  .btn {
-    display: block; /* Mostrar el botón */
-    margin-top: 10px; /* Ajustar el espacio entre el botón y el resto del contenido */
-  }
-
-  .submenu {
-    display: none; /* Ocultar el submenú */
-  }
-
-  .logo img {
-    height: 25px; /* Reducir aún más el tamaño del logo */
-    width: auto;
-  }
-
-  .text-logo {
-    padding: 2px 0; /* Reducir el espacio alrededor del texto del logo */
-    font-size: 10px; /* Disminuir aún más el tamaño del texto del logo */
-  }
-
-  .btn button {
-    width: 100px; /* Reducir aún más el ancho del botón */
-    padding: 6px 10px; /* Reducir aún más el padding del botón */
-    border-radius: 8px; /* Disminuir aún más el radio del borde del botón */
-    font-size: 9px; /* Disminuir aún más el tamaño del texto del botón */
+  .nav-links li:hover .submenu {
+    display: block; /* Muestra el submenú al hacer clic en dispositivos móviles */
   }
 }
