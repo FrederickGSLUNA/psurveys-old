@@ -198,7 +198,6 @@ header .overlay .close{
   display: none; /* Por defecto, el submenú estará oculto */
   list-style: none; /* Elimina los puntos de lista */
   margin: auto;
-  padding: auto;
   text-align: center;
   position: absolute; /* Agregado para una mejor colocación */
   background-color: #f9f9f9; /* Color de fondo del submenú */
@@ -236,4 +235,12 @@ header .overlay .close{
   .nav-links li:hover .submenu {
     display: block; /* Muestra el submenú al hacer clic en dispositivos móviles */
   }
+}
+
+.show-submenu {
+  display: block;
+}
+
+.submenu.submenu-mobile {
+  font-size: 0.8rem;
 }
