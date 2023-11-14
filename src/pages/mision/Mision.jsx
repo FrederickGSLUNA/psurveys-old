@@ -10,12 +10,12 @@ const Mision = () => {
         <div>
             <Navbar />
             <section className='section-mision'>
-                <h2>Nuestra Misión:</h2> <br />
+                <h2>Nuestra Misión</h2> <br />
                 <p>
                     En Psurveys, nuestra misión se centra en proporcionar soluciones especializadas de evaluación psicológica a la Universidad Tecnológica de la Costa Grande de Guerrero. Nos comprometemos a ofrecer herramientas como Lynn O'Brien, PNL, Honey Alonso y análisis de riesgos psicosociales, brindando una comprensión profunda de la psicología humana para potenciar el desarrollo académico, profesional y personal de los jefes de área, psicólogos y alumnos.
                 </p>
                     <br />
-                <h2>Nuestros Compromisos:</h2> <br />
+                <h2>Nuestros Compromisos</h2> <br />
                 <p>
                     <ol>
                         <li>Brindar evaluaciones psicológicas precisas y actualizadas, adaptadas al entorno universitario, utilizando métodos como Lynn O'Brien, PNL, Honey Alonso y análisis de riesgos psicosociales, para proporcionar información valiosa y facilitar el crecimiento académico y personal.</li>

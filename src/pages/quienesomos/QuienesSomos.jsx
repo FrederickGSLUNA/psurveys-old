@@ -12,7 +12,7 @@ const QuienesSomos = () => {
       <section className="section-quienes-somos">    
         <h2>¿Quiénes Somos?</h2>
         <p>
-          Bienvenidos a Psurveys, una plataforma dedicada a brindar soluciones educativas y psicológicas. 
+          Bienvenidos a <b>Psurveys</b>, una plataforma dedicada a brindar soluciones educativas y psicológicas. 
           Nuestra empresa se enfoca en la Universidad Tecnológica de la Costa Grande de Guerrero, 
           proporcionando herramientas para el desarrollo de los alumnos, el apoyo de los psicólogos 
           y la optimización del trabajo de los jefes de área.

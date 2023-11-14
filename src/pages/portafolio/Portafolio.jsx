@@ -27,7 +27,7 @@ const Portafolio = () => {
       <section className='section-portafolio'>
         <h1>Portafolio</h1> <br />
         <p>Descubre nuestros proyectos más recientes y exitosos. Sumérgete en un mundo de creatividad y excelencia.</p> <br />
-        <Carousel showThumbs={false} selectedItem={activeSlide} autoPlay={true} interval={3000} infiniteLoop={true}>
+        <Carousel showThumbs={true} selectedItem={activeSlide} autoPlay={true} interval={3000} infiniteLoop={true}>
           <div>
             <img src={portafolio1} alt="Portafolio 1" />
           </div>

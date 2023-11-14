@@ -1,6 +1,6 @@
 .section-valores {
-    padding: 110px 5% 0 5%; /* Ajuste del padding para ser responsivo */
-    min-height: 60vh; /* Altura mínima igual al 100% de la altura de la ventana */
+    padding: 110px 250px; /* Ajuste del padding para ser responsivo */
+    min-height: 50vh; /* Altura mínima igual al 100% de la altura de la ventana */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -9,13 +9,13 @@
   /* Estilos para los títulos h2 */
   .section-valores h2 {
     font-size: 32px;
-    margin-bottom: 20px;
   }
   
   /* Estilos para el texto del párrafo */
   .section-valores li p {
     font-size: 25px;
     text-align: justify;
+    line-height: 1.5;
   }
 
   /* Media queries para la responsividad */
@@ -28,7 +28,7 @@
       font-size: 28px;
     }
   
-    .section-valores p {
+    .section-valores li p {
       font-size: 16px;
       margin-top: 2px;
     }

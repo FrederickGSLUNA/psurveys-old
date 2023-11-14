@@ -1,34 +1,27 @@
 /* Estilos base */
 .section-ayuda {
-  padding-top: 87px;
+  padding: 110px 250px; /* Ajuste del padding para ser responsivo */
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-ayuda h1 {
+  font-size: 32px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.section-ayuda p {
+  font-size: 25px;
+  line-height: 1.5;
 }
 
 .section-ayuda img {
-  max-width: 100%; /* Hacer que la imagen sea completamente receptiva */
-  height: auto; /* Evitar distorsiones en la imagen */
+  max-width: 50%; /* Hacer que la imagen sea completamente receptiva */
+  height: 400px; /* Establecer la altura fija para las imágenes */
   display: block; /* Evitar espacio adicional debajo de la imagen */
   margin: 0 auto; /* Centrar la imagen */
-}
-
-.section-ayuda .titulo {
-  font-size: 40px;
-}
-
-.section-ayuda .principal {
-  padding: 40px;
-  text-align: center;
-  align-items: center;
-}
-
-.section-ayuda .texto {
-  padding: 20px;
-  margin: 20px;
-  font-size: 26px;
-  justify-content: center;
-  text-align: justify;
-  line-height: 120%;
-  letter-spacing: -0.10rem;
 }
 
 /* Estilos responsivos */

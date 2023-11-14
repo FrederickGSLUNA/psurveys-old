@@ -1,6 +1,6 @@
 /* Estilos para la sección de la misión */
 .section-mision {
-    padding: 110px 5% 0 5%; /* Ajuste del padding para ser responsivo */
+    padding: 110px 250px; /* Ajuste del padding para ser responsivo */
     min-height: 100vh; /* Altura mínima igual al 100% de la altura de la ventana */
     text-align: center;
     display: flex;
@@ -10,12 +10,15 @@
   .section-mision h2 {
     font-size: 32px;
     margin-bottom: 10px;
+    padding: 10px;
   }
   
   /* Estilos para el texto del párrafo */
   .section-mision p {
     font-size: 25px;
     text-align: justify;
+    padding: 10px;
+    line-height: 1.5;
   }
   
   /* Estilos para la lista ordenada */

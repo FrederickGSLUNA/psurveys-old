@@ -12,16 +12,14 @@ const Ayuda = () => {
     <div>
       <Navbar/>
       <section className="section-ayuda">
-        <div className="principal">
-        	<h1 className="titulo">Ayuda</h1>
-        	<p className="texto">
+        	<h1>Ayuda</h1>
+        	<p>
             En esta sección, encontrarás información valiosa y consejos útiles sobre temas 
             de salud mental y bienestar. Nuestro objetivo es proporcionarte información clara
             y concisa para que puedas tomar decisiones informadas sobre tu propia salud mental
             y la de tus seres queridos.
         	</p>
             <img src={ayuda1} alt="Ayuda" />
-        </div>
       </section>
       <Footer/>
     </div>

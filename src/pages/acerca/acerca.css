@@ -1,22 +1,24 @@
 .section-acerca {
-  padding: 110px 5% 0 5%;
-  text-align: center;
+  padding: 110px 250px;
 }
 
 /* Estilos para el título h1 */
 .section-acerca h1 {
-  font-size: 40px;
+  font-size: 32px;
+  text-align: center;
 }
 
 /* Estilos para los títulos h4 y párrafos p */
 .section-acerca h4 {
-  font-size: 26px;
+  font-size: 24px;
+  text-align: center;
 }
 
 .section-acerca p {
-  font-size: 25px;
+  font-size: 22px;
   text-align: justify;
   margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 /* Estilos para las imágenes */
