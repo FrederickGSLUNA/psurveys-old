@@ -78,7 +78,7 @@ const Footer = () => {
         <p>&copy; 2023 Psurveys. All rights reserved.</p>
         
         <div className="legal__links">
-          <span>Desarrollado por:  @ Team Psurveys</span>
+          <span>Desarrollado por:  @TeamPsurveys</span>
         </div>
       </div>
     </footer>
