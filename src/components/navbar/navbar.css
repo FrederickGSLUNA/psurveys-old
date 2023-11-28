@@ -195,6 +195,7 @@ header .overlay .close{
 
 /* Estilos para mostrar el submenú en dispositivos más grandes */
 .submenu {
+  padding: 10px 0;
   display: none; /* Por defecto, el submenú estará oculto */
   list-style: none; /* Elimina los puntos de lista */
   margin: auto;
@@ -203,11 +204,28 @@ header .overlay .close{
   background-color: #f9f9f9; /* Color de fondo del submenú */
   border: 2px solid #e0dcdc; /* Borde del submenú */ 
   border-radius: 10px; /* Borde redondeado */
-}
 
-.submenu li:hover {
-  margin: 3px;
-  padding: auto;
+  & li {
+    border-bottom: 1px solid #e0dcdc;
+    padding: 5px 20px !important;
+    width: 100%;
+    margin-top: -5px !important;
+  }
+
+  & li:last-child {
+    border-bottom: none;
+  }
+
+  @media (width < 768px) {
+    & {
+      padding: 0 !important;
+      font-size: 15px !important;
+    }
+
+    & li {
+      padding: 0 !important;
+    }
+  }
 }
 
 /* Estilos para posicionar cada submenú debajo del elemento correspondiente */

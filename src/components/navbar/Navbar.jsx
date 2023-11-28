@@ -37,12 +37,12 @@ const Navbar = () => {
           <li>
             Acerca
             <ul className="submenu">
-              <li><NavLink to="/acerca">Empresa</NavLink></li> <hr />
-              <li><NavLink to="/mision">Misión</NavLink></li> <hr />
-              <li><NavLink to="/vision">Visión</NavLink></li> <hr />
-              <li><NavLink to="/somos">¿Quiénes Somos?</NavLink></li> <hr />
-              <li><NavLink to="/valores">Valores</NavLink></li> <hr />
-              <li><NavLink to="/servicios">Servicios Ofrecidos</NavLink></li> <hr />
+              <li><NavLink to="/acerca">Empresa</NavLink></li>
+              <li><NavLink to="/mision">Misión</NavLink></li>
+              <li><NavLink to="/vision">Visión</NavLink></li>
+              <li><NavLink to="/somos">¿Quiénes Somos?</NavLink></li>
+              <li><NavLink to="/valores">Valores</NavLink></li>
+              <li><NavLink to="/servicios">Servicios Ofrecidos</NavLink></li>
               <li><NavLink to="/portafolio">Portafolio</NavLink></li>
             </ul>
           </li>
